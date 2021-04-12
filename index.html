@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyjokes API</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form action="GET">
+        <fieldset>
+            <div class="row">
+                <div class="column">
+                    <label for="category">Category</label>
+                    <select id="category">
+                      <option value="all">All</option>
+                      <option value="chuck">chuck</option>
+                      <option value="neutral">neutral</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="language">Language</label>
+                    <select id="language">
+                      <option value="en">en</option>
+                      <option value="de">de</option>
+                      <option value="es">es</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="number">Number</label>
+                    <input type="text" placeholder="" id="number">
+                </div>
+                <div class="column">
+                    <label for="id">Id</label>
+                    <input type="text" placeholder="" id="id">
+                </div>
+            </div>
+          <input class="button-primary" type="button" onclick="requestJoke()" value="Amuse Me !!">
+        </fieldset>
+      </form>
+      <ol id="jokes_result"></ol>
+</body>
+
+</html>
