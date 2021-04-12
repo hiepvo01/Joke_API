@@ -1,7 +1,7 @@
 /* jshint esversion: 8 */
 'use strict';
 
-const BASE_URL = "http://vohi01.pythonanywhere.com/api/v1/jokes";
+const BASE_URL = "https://vohi01.pythonanywhere.com/api/v1/jokes";
 
 async function requestJoke() {
     let url = "";
